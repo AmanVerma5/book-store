@@ -3,16 +3,19 @@ import React from "react";
 
 
 const LargeBookPoster=({book,index})=>{
+    
 
     let color=["#547c94","#725394","#96536e"]
 
     function btn1Click(){
+        console.log(book.volumeInfo.previewLink)
         window.open(book.volumeInfo.previewLink);
     }
     function btn2Click(){
+        console.log(book.volumeInfo.infoLink)
         window.open(book.volumeInfo.infoLink);
     }
-
+    
     return(
         <div className="largebookposter" >
             <div className="imagesection">

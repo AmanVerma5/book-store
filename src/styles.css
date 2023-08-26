@@ -194,6 +194,11 @@ body{
 .describe{
     font-weight: 100;
     margin-bottom: 10px;
+    height:9vh;
+    overflow: scroll;
+}
+.describe::-webkit-scrollbar{
+    display: none;
 }
 .rates{
     display: flex;

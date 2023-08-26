@@ -11,7 +11,9 @@ const Book=({books})=>{
     let[index,setIndex]=useState(0);
 
     const handleBookClick = (book,index) => {
+        console.log(book)
         setSelectedBook(book);
+        
         setIndex(index)
       };
   
